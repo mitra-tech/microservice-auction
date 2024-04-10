@@ -30,3 +30,4 @@ C:\Users\mitra\OneDrive\Desktop\Auction-Microservice-App\src\AuctionService\obj\
 C:\Users\mitra\OneDrive\Desktop\Auction-Microservice-App\src\AuctionService\obj\Debug\net8.0\AuctionService.pdb
 C:\Users\mitra\OneDrive\Desktop\Auction-Microservice-App\src\AuctionService\obj\Debug\net8.0\AuctionService.genruntimeconfig.cache
 C:\Users\mitra\OneDrive\Desktop\Auction-Microservice-App\src\AuctionService\obj\Debug\net8.0\ref\AuctionService.dll
+C:\Users\mitra\OneDrive\Desktop\Auction-Microservice-App\src\AuctionService\obj\Debug\net8.0\AuctionService.sourcelink.json
