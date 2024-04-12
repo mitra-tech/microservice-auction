@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mitra\\onedrive\\desktop\\Auction-Microservice-App\\src\\AuctionService\\AuctionService.csproj": {}
+    "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mitra\\onedrive\\desktop\\Auction-Microservice-App\\src\\AuctionService\\AuctionService.csproj": {
+    "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mitra\\onedrive\\desktop\\Auction-Microservice-App\\src\\AuctionService\\AuctionService.csproj",
+        "projectUniqueName": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj",
         "projectName": "AuctionService",
-        "projectPath": "C:\\Users\\mitra\\onedrive\\desktop\\Auction-Microservice-App\\src\\AuctionService\\AuctionService.csproj",
+        "projectPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj",
         "packagesPath": "C:\\Users\\mitra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mitra\\onedrive\\desktop\\Auction-Microservice-App\\src\\AuctionService\\obj\\",
+        "outputPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\mitra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,9 +49,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Swashbuckle.AspNetCore": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -69,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
