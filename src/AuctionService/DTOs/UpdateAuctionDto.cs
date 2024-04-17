@@ -1,6 +1,6 @@
 
 
-namespace AuctionService;
+namespace AuctionService.DTOs;
 
 public class UpdateAuctionDto 
 {
