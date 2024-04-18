@@ -14,14 +14,14 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// add Mongodb to act as a search server
-await DB.InitAsync("SearchDb", MongoClientSettings
-    .FromConnectionString(builder.Configuration.GetConnectionString("MongoDbConnection")));
+try 
+{
+    await DbInitializer.InitDb(app);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
-await DB.Index<Item>()
-    .Key(x => x.Make, KeyType.Text)
-    .Key(x => x.Model, KeyType.Text)
-    .Key(x => x.Color, KeyType.Text)
-    .CreateAsync();
 
 app.Run();
