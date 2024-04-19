@@ -4,7 +4,7 @@
     "Status": "Live",
     "ReservePrice": 20000,
     "Seller": "bob",
-    "AuctionEnd": "<Date in UTC format 10 days from now>",
+    "AuctionEnd": "2018-05-05",
     "Item": {
       "Make": "Ford",
       "Model": "GT",
@@ -19,7 +19,7 @@
     "Status": "Live",
     "ReservePrice": 90000,
     "Seller": "alice",
-    "AuctionEnd": "<Date in UTC format 60 days from now>",
+    "AuctionEnd":  "2002-01-07",
     "Item": {
       "Make": "Bugatti",
       "Model": "Veyron",
@@ -33,7 +33,7 @@
     "Id": "bbab4d5a-8565-48b1-9450-5ac2a5c4a654",
     "Status": "Live",
     "Seller": "bob",
-    "AuctionEnd": "<Date in UTC format 4 days from now>",
+    "AuctionEnd": "2015-01-12",
     "Item": {
       "Make": "Ford",
       "Model": "Mustang",
@@ -48,7 +48,7 @@
     "Status": "ReserveNotMet",
     "ReservePrice": 50000,
     "Seller": "tom",
-    "AuctionEnd": "<Date in UTC format 10 days ago>",
+    "AuctionEnd":  "2009-09-09",
     "Item": {
       "Make": "Mercedes",
       "Model": "SLK",
@@ -63,7 +63,7 @@
     "Status": "Live",
     "ReservePrice": 20000,
     "Seller": "alice",
-    "AuctionEnd": "<Date in UTC format 30 days from now>",
+    "AuctionEnd":  "2001-04-09",
     "Item": {
       "Make": "BMW",
       "Model": "X1",
@@ -78,7 +78,7 @@
     "Status": "Live",
     "ReservePrice": 20000,
     "Seller": "bob",
-    "AuctionEnd": "<Date in UTC format 45 days from now>",
+    "AuctionEnd":  "2012-03-12",
     "Item": {
       "Make": "Ferrari",
       "Model": "Spider",
@@ -93,7 +93,7 @@
     "Status": "Live",
     "ReservePrice": 150000,
     "Seller": "alice",
-    "AuctionEnd": "<Date in UTC format 13 days from now>",
+    "AuctionEnd":  "2019-12-19",
     "Item": {
       "Make": "Ferrari",
       "Model": "F-430",
@@ -107,7 +107,7 @@
     "Id": "6a5011a1-fe1f-47df-9a32-b5346b289391",
     "Status": "Live",
     "Seller": "bob",
-    "AuctionEnd": "<Date in UTC format 19 days from now>",
+    "AuctionEnd":  "2010-02-10",
     "Item": {
       "Make": "Audi",
       "Model": "R8",
@@ -122,7 +122,7 @@
     "Status": "Live",
     "ReservePrice": 20000,
     "Seller": "tom",
-    "AuctionEnd": "<Date in UTC format 20 days from now>",
+    "AuctionEnd":  "2012-04-19",
     "Item": {
       "Make": "Audi",
       "Model": "TT",
@@ -137,13 +137,28 @@
     "Status": "Live",
     "ReservePrice": 20000,
     "Seller": "bob",
-    "AuctionEnd": "<Date in UTC format 45 days from now>",
+    "AuctionEnd":  "2019-01-11",
     "Item": {
       "Make": "Ferrari",
       "Model": "Spider",
       "Color": "Red",
       "Mileage": 50000,
       "Year": 2015,
+      "ImageUrl": "https://cdn.pixabay.com/photo/2017/11/09/01/49/ferrari-458-spider-2932191_960_720.jpg"
+    }
+  },
+  {
+    "Id": "7664DEE0-7BEB-457F-A528-50BC181D76A9",
+    "Status": "Live",
+    "ReservePrice": 11100,
+    "Seller": "Rob",
+    "AuctionEnd":  "2011-11-11",
+    "Item": {
+      "Make": "Ferrari",
+      "Model": "Spider",
+      "Color": "Blue",
+      "Mileage": 15000,
+      "Year": 2017,
       "ImageUrl": "https://cdn.pixabay.com/photo/2017/11/09/01/49/ferrari-458-spider-2932191_960_720.jpg"
     }
   }

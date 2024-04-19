@@ -20,17 +20,14 @@ public class DbInitializer
 
         if (count == 0) 
         {
-            Console.WriteLine("No data - is seeded!");
-            
-            var itemData = await File.ReadAllTextAsync("Data/auctions.json");
+        Console.WriteLine("No data - is seeded!");
+        var itemData = await File.ReadAllTextAsync("Data/auctions.json");
 
-            var options = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
+        var options = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
 
-            var items = JsonSerializer.Deserialize<List<Item>>(itemData, options);
+        var items = JsonSerializer.Deserialize<List<Item>>(itemData, options);
 
-            await DB.SaveAsync(items);
-
-        }
-
+        await DB.SaveAsync(items);
+        } 
     }
 }
