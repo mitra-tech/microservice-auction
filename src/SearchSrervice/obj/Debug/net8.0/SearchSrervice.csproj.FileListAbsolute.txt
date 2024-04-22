@@ -43,3 +43,6 @@ C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\SearchSrervice\obj\Debu
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\SearchSrervice\obj\Debug\net8.0\SearchSrervice.genruntimeconfig.cache
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\SearchSrervice\obj\Debug\net8.0\ref\SearchSrervice.dll
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\SearchSrervice\bin\Debug\net8.0\Data\auctions.json
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\SearchSrervice\bin\Debug\net8.0\Microsoft.Extensions.Http.Polly.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\SearchSrervice\bin\Debug\net8.0\Polly.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\SearchSrervice\bin\Debug\net8.0\Polly.Extensions.Http.dll
