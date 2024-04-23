@@ -1,6 +1,7 @@
 using System.Net;
 using MongoDB.Driver;
 using MongoDB.Entities;
+using MassTransit;
 using Polly;
 using Polly.Extensions.Http;
 using SearchService;
@@ -11,6 +12,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddHttpClient<AuctionServiceHttpClient>().AddPolicyHandler(GetPolicy());
 
+// Inject RabbitMq Mass Transit to our services
+// With the following set up, it automatically configures the names of our ques
+builder.Services.AddMassTransit(x => 
+{
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.ConfigureEndpoints(context);
+    });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
