@@ -10,12 +10,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 builder.Services.AddHttpClient<AuctionServiceHttpClient>().AddPolicyHandler(GetPolicy());
 
 // Inject RabbitMq Mass Transit to our services
 // With the following set up, it automatically configures the names of our ques
 builder.Services.AddMassTransit(x => 
 {
+    x.AddConsumersFromNamespaceContaining<AuctionCreatedConsumer>();
+
+    x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("serach", false));
+
     x.UsingRabbitMq((context, cfg) =>
     {
         cfg.ConfigureEndpoints(context);
