@@ -1,0 +1,12 @@
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\bin\Debug\net8.0\Contracts.deps.json
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\bin\Debug\net8.0\Contracts.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\bin\Debug\net8.0\Contracts.pdb
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\obj\Debug\net8.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfo.cs
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\obj\Debug\net8.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\obj\Debug\net8.0\Contracts.sourcelink.json
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\obj\Debug\net8.0\Contracts.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\obj\Debug\net8.0\refint\Contracts.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\obj\Debug\net8.0\Contracts.pdb
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\Contracts\obj\Debug\net8.0\ref\Contracts.dll

@@ -1089,6 +1089,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
       }
     }
   },
@@ -2850,11 +2860,17 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "Contracts >= 1.0.0",
       "MassTransit.RabbitMQ >= 8.2.1",
       "Microsoft.EntityFrameworkCore >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.4",
@@ -2868,11 +2884,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj",
+      "projectUniqueName": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj",
       "projectName": "AuctionService",
-      "projectPath": "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj",
+      "projectPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj",
       "packagesPath": "C:\\Users\\mitra\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\obj\\",
+      "outputPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2886,12 +2902,17 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\Contracts\\Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
