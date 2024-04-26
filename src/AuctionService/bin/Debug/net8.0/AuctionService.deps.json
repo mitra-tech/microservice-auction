@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Contracts": "1.0.0",
+          "MassTransit.EntityFrameworkCore": "8.2.1",
           "MassTransit.RabbitMQ": "8.2.1",
           "Microsoft.EntityFrameworkCore": "8.0.4",
           "Microsoft.EntityFrameworkCore.Design": "8.0.4",
@@ -69,6 +70,18 @@
       "MassTransit.Abstractions/8.2.1": {
         "runtime": {
           "lib/net8.0/MassTransit.Abstractions.dll": {
+            "assemblyVersion": "8.2.1.0",
+            "fileVersion": "8.2.1.0"
+          }
+        }
+      },
+      "MassTransit.EntityFrameworkCore/8.2.1": {
+        "dependencies": {
+          "MassTransit": "8.2.1",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.4"
+        },
+        "runtime": {
+          "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
             "assemblyVersion": "8.2.1.0",
             "fileVersion": "8.2.1.0"
           }
@@ -641,6 +654,13 @@
       "sha512": "sha512-9dk3hcAlXXXEVPZC+5UPJnYnQ9Hcv71kXtkHL85w5wtQ43go1Ieso6QJYvCVj++mq61LCjnhJSPlN/eWgScbkw==",
       "path": "masstransit.abstractions/8.2.1",
       "hashPath": "masstransit.abstractions.8.2.1.nupkg.sha512"
+    },
+    "MassTransit.EntityFrameworkCore/8.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rEBf2mx8ruOmeluRz2030WQE2Y7FBjBgX2oc53eKlcrg8g65ROwwXm+bip1abHX0KsiBb+YCA4d3hv+FmbNY4w==",
+      "path": "masstransit.entityframeworkcore/8.2.1",
+      "hashPath": "masstransit.entityframeworkcore.8.2.1.nupkg.sha512"
     },
     "MassTransit.RabbitMQ/8.2.1": {
       "type": "package",

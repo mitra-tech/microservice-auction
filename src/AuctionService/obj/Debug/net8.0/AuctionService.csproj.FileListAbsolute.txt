@@ -139,3 +139,4 @@ C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\AuctionService\bin\Debu
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\AuctionService\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\AuctionService\bin\Debug\net8.0\Contracts.dll
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\AuctionService\bin\Debug\net8.0\Contracts.pdb
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\AuctionService\bin\Debug\net8.0\MassTransit.EntityFrameworkCoreIntegration.dll
