@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using AutoMapper;
 using MassTransit;
 using Contracts;
@@ -48,6 +49,7 @@ public class AuctionsController : ControllerBase
         return _mapper.Map<AuctionDto>(auction);
     }
 
+    [Authorize]
     [HttpPost]
     public async Task<ActionResult<AuctionDto>> CreateAuction(CreateAuctionDto auctionDto) 
     {
@@ -55,7 +57,7 @@ public class AuctionsController : ControllerBase
 
         //TODO : add user as seller
 
-        auction.Seller = "test";
+        auction.Seller = User.Identity.Name;
 
         _context.Auctions.Add(auction);
         
@@ -71,6 +73,8 @@ public class AuctionsController : ControllerBase
         return CreatedAtAction(nameof(GetAuctionById), newAuction);
     }
 
+
+    [Authorize]
     [HttpPut("{id}")]
     public async Task<ActionResult> UpdateAuction(Guid id, UpdateAuctionDto updateAuctionDto)
     {
@@ -79,7 +83,8 @@ public class AuctionsController : ControllerBase
 
         if(auction == null) return NotFound();
 
-        // TODO: check seller == username 
+        if(auction.Seller != User.Identity.Name) return Forbid();
+
         auction.Item.Make = updateAuctionDto.Make ?? auction.Item.Make;
         auction.Item.Model = updateAuctionDto.Model ?? auction.Item.Model;
         auction.Item.Color = updateAuctionDto.Color ?? auction.Item.Color;
@@ -93,7 +98,7 @@ public class AuctionsController : ControllerBase
         return BadRequest("Changes were not saved!");   
     }
 
-
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteAuction(Guid id)
     {
@@ -101,7 +106,7 @@ public class AuctionsController : ControllerBase
 
         if(auction == null) return NotFound();
 
-        // TODO: check seller == username 
+         if(auction.Seller != User.Identity.Name) return Forbid();
 
         _context.Auctions.Remove(auction);
     
