@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SearchSrervice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8263145dbaedfcfc1db3573331db513788e9d407")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e26f3af44e172d31419931426b98d89c5ceeec4c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SearchSrervice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SearchSrervice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
