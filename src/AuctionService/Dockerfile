@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 as build
-WORKDIR /src
+WORKDIR /app
 EXPOSE 80
 
 # copy all .csproj files and restore as distinct layers. Use of the same COPY command
@@ -17,7 +17,7 @@ COPY src/IdentityService/IdentityService.csproj src/IdentityService/IdentityServ
 # Restore package deps
 RUN dotnet restore Auction-Microservice-App.sln
 
-# Copy the app folders 
+# Copy the app folders over
 COPY src/AuctionService src/AuctionService
 COPY src/Contracts src/Contracts
 WORKDIR /app/src/AuctionService
