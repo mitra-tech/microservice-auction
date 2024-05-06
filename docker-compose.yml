@@ -35,4 +35,22 @@ services:
     ports: 
       - 7001:80
     depends_on:
-      - rabbitmq             
+      - postgres
+      - rabbitmq
+  search-svc: 
+    image: mitratech/search-svc:latest
+    build: 
+      context: .
+      dockerfile: src/SearchSrervice/Dockerfile
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - RabbitMq__Host=rabbitmq
+      - ConnectionStrings__MongoDbConnection=mongodb://root:mongopw@mongodb
+      - AuctionServiceUrl=http://auction-svc
+    ports: 
+      - 7002:80
+    depends_on:
+      - mongodb
+      - rabbitmq                 
+
