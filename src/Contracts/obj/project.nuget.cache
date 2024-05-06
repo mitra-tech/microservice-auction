@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4klud2D5kNldAph+QHJFihJER/4PkR8JZkSaL5svV5E3nigaz7MOJn3R+3qKhq2j9uM5uiPPdJcZWcXmbsy4mw==",
+  "dgSpecHash": "HWE3nxdHgXaECuG2ObvDJaV+hSEBzEMnkBW03Mz5UMyxwKgscRo11Mj2AFz6u7tVOFi6e/jdQ+V1BtyldN858g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\Contracts\\Contracts.csproj",
+  "projectFilePath": "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
