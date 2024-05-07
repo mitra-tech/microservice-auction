@@ -1,7 +1,7 @@
 ***Microservices Auction repository***
 
 
-This is the repository for the Microservices 'Auctions' app started in April 2024 and released in ...
+This is the repository for the Microservices 'Auctions' app started in April 2024 and released in June 2024, uing C# and Next.js
 
 You can register a user and sign in to see it in action or you can use one of the test accounts with the username 'bob' or 'alice' with the password of 'Pass123$' to sign in.
 
@@ -31,4 +31,3 @@ docker compose build
 ```bash
 docker compose up -d
 ```
-
