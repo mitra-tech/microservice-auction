@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RzwD28pyQ/z7yAVrR/qWJNZdTyu5kIIJOlIq08tFAIOP/EMTq8clOg4iMvV/Z7GdinkWDFbKk+CaJ/4HV2jICw==",
+  "dgSpecHash": "qWFn/nSyhc2lEPjoPCD8891rSrJlgeX6zfQlX+l31Gm0yyYyejU44Zt3mUvDdfUqaVyqd/Lvq56FQnJ2mdVTVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj",
+  "projectFilePath": "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mitra\\.nuget\\packages\\duende.identityserver\\7.0.4\\duende.identityserver.7.0.4.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\duende.identityserver.aspnetidentity\\7.0.4\\duende.identityserver.aspnetidentity.7.0.4.nupkg.sha512",
@@ -88,7 +88,8 @@
     "C:\\Users\\mitra\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\mitra\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
+    "C:\\Users\\mitra\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\8.0.4\\microsoft.netcore.app.host.linux-x64.8.0.4.nupkg.sha512"
   ],
   "logs": []
 }
