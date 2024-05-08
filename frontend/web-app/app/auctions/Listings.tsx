@@ -1,9 +1,10 @@
 import React from 'react';
 import AuctionCard from './AuctionCard';
+import { Auction, PageResult } from '@/types/Index';
 
 
 // Fetchs data from serch service
-async function getData() {
+async function getData() : Promise<PageResult<Auction>>{
     const res = await fetch('http://localhost:6001/search');
     if(!res.ok) throw new Error('Failed to ferch data!');
     return res.json();
@@ -15,7 +16,7 @@ export default async function Listings() {
 
   return (
     <div className='grid grid-cols-4 gap-6'>
-        {data && data.results.map((auction : any) => (
+        {data && data.results.map((auction) => (
             <AuctionCard auction={auction} key={auction.id}/>
         ))}
     </div>
