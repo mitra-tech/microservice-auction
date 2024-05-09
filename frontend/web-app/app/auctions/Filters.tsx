@@ -1,3 +1,4 @@
+import { Button, ButtonGroup } from 'flowbite-react';
 import React from 'react'; 
 
 type Props = {
@@ -10,7 +11,17 @@ export default function Filters({pageSize, setPageSize}: Props) {
   return (
     <div className='flex justify-between items-center mb-4'>
         <div>
-            <span className='uppercase text-sm text-gray-400 mr-2'> </span>
+            <span className='uppercase text-sm text-gray-400 mr-2'>Page size</span>
+            <ButtonGroup>
+                {pageSizeButtons.map((value, index) => (
+                    <Button key={index} 
+                    onClick={() => setPageSize(value)}
+                    color={`${pageSize === value ? 'red' : 'gray'}`}
+                    >
+                        {value}
+                    </Button>
+                ))}
+            </ButtonGroup>
         </div>
     </div>
   )
