@@ -7,5 +7,5 @@ public class AuctionFinished
     public string AuctionId { get; set; }
     public string Winner { get; set; }
     public bool Seller { get; set; }
-    public int? Amount { get; set; }
+    public int Amount { get; set; }
 }
