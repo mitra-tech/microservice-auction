@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Txk5Ws5u/BqwqmsLxwMQkueRVdcLVecA6inH5rPsb+JmBeC0EZdsUdS1NLe9tK6obqN2OmdGp3PCaOK8/8YWzw==",
+  "dgSpecHash": "Rhtl2K9mvAuI6Of9PkBh4h+aZXwi1PSre/OXcI5zUAX3QZeMml+WKIR4zoqc7rLzQbXrOh5EdxQi014hrR/2ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\auctionservice\\AuctionService.csproj",
+  "projectFilePath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mitra\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\auctionservice\\AuctionService.csproj": {}
+    "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\auctionservice\\AuctionService.csproj": {
+    "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\auctionservice\\AuctionService.csproj",
+        "projectUniqueName": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj",
         "projectName": "AuctionService",
-        "projectPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\auctionservice\\AuctionService.csproj",
+        "projectPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\AuctionService.csproj",
         "packagesPath": "C:\\Users\\mitra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\auctionservice\\obj\\",
+        "outputPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\AuctionService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
