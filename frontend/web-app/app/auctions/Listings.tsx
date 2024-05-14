@@ -49,16 +49,16 @@ export default function Listings() {
       <EmptyFilter showReset />
     ) : (
         <>
-        <div className='grid grid-cols-4 gap-6'>
-          {data.results.map((auction) => (
-              <AuctionCard auction={auction} key={auction.id}/>
-          ))}
-      </div>
-      <div className='flex justify-center mt-4'>
-        <AppPagination currentPage={params.pageNumber} pageCount={data.pageCount} pageChanged={setPageNumber}/>
-      </div>
+          <div className='grid grid-cols-4 gap-6'>
+            {data.results.map((auction) => (
+                <AuctionCard auction={auction} key={auction.id}/>
+            ))}
+          </div>
+          <div className='flex justify-center mt-4'>
+          <AppPagination currentPage={params.pageNumber} pageCount={data.pageCount} pageChanged={setPageNumber}/>
+          </div>
         </>
-      ) }
+      )}
     </>
   )
 }
