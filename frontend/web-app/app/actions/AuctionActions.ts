@@ -1,16 +1,12 @@
 'use server'
 import { Auction, PageResult } from "@/types/Index";
 import { getTokenWorkaround } from "./authActions";
+import { fetchWrapper } from "@/lib/fetchWrapper";
 
 
 // Fetchs data from serch service
 export async function getData(query: string) : Promise<PageResult<Auction>> {
-
-    const res = await fetch(`http://localhost:7001/search${query}`);
-
-    if(!res.ok) throw new Error('Failed to fetch data!');
-    
-    return res.json();
+      return await fetchWrapper.get(`search${query}`)
   }
 
   export async function UpdateAuctionTest() {
