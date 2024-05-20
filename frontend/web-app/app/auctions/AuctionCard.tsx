@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import CountdownTimer from './CountdownTimer';
 import CarImage from './CarImage';
-import { Auction } from '@/types/Index';
+import { Auction } from '@/types';
 import Link from 'next/link';
 
 type Props = {

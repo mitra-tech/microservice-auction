@@ -1,5 +1,5 @@
 'use server'
-import { Auction, PageResult } from "@/types/Index";
+import { Auction, PageResult } from '@/types';
 import { fetchWrapper } from "@/lib/fetchWrapper";
 import { FieldValues } from "react-hook-form";
 
@@ -21,4 +21,9 @@ export async function getData(query: string) : Promise<PageResult<Auction>> {
 
   export async function createAuction(data: FieldValues) {
     return await fetchWrapper.post('auction', data);
+  }
+
+
+  export async function getDetailedViewData(id: string) : Promise<Auction> {
+    return await fetchWrapper.get(`auction/${id}`);
   }
