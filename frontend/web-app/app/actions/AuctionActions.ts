@@ -2,6 +2,7 @@
 import { Auction, PageResult } from '@/types';
 import { fetchWrapper } from "@/lib/fetchWrapper";
 import { FieldValues } from "react-hook-form";
+import { revalidatePath } from 'next/cache';
 
 
 // Fetchs data from serch service
@@ -26,4 +27,10 @@ export async function getData(query: string) : Promise<PageResult<Auction>> {
 
   export async function getDetailedViewData(id: string) : Promise<Auction> {
     return await fetchWrapper.get(`auction/${id}`);
+  }
+
+  export async function updateAuction(data: FieldValues, id: string) {
+    const res =  await fetchWrapper.put(`auctions/${id}}`, data);
+    revalidatePath(`/auctions/${id}`);
+    return res;
   }
