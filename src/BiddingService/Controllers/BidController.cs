@@ -19,7 +19,7 @@ public class BidsController : ControllerBase {
             return NotFound();
         };
 
-        if(auction.Seller == User.Identity.Name)
+        if (auction.Seller == User.Identity.Name)
         {
             return BadRequest("You cant bid in your own auction");
         };
@@ -31,27 +31,42 @@ public class BidsController : ControllerBase {
             Bidder = User.Identity.Name
         };
 
-        if(auction.AuctionEnd < DateTime.UtcNow)
+        if (auction.AuctionEnd < DateTime.UtcNow)
         {
             bid.BidStatus = BidStatus.Finished;
-        }
-
-        var highBid = await DB.Find<Bid>()
-            .Match(a => a.AuctionId == auctionId)
-            .Sort(b => b.Descending(x => x.Amount))
-            .ExecuteFirstAsync();
-
-        if (highBid != null && amount > highBid.Amount || highBid == null) 
+        } 
+        else 
         {
-            bid.BidStatus = amount > auction.ReservePrice ? BidStatus.Accepted : BidStatus.AcceptedBelowReserve;
+            var highBid = await DB.Find<Bid>()
+                .Match(a => a.AuctionId == auctionId)
+                .Sort(b => b.Descending(x => x.Amount))
+                .ExecuteFirstAsync();
+
+            if (highBid != null && amount > highBid.Amount || highBid == null) 
+            {
+                bid.BidStatus = amount > auction.ReservePrice ? BidStatus.Accepted : BidStatus.AcceptedBelowReserve;
+            }
+
+            if (highBid != null &&  bid.Amount  <= highBid.Amount) 
+            {
+                bid.BidStatus = BidStatus.TooLow
+    ;       }
         }
-
-        if (highBid != null &&  bid.Amount  <= highBid.Amount) 
-        {
-            bid.BidStatus = BidStatus.TooLow
-;       }
-
         await DB.SaveAsync(bid);
+        
         return Ok(bid);
     }
+
+    [HttpGet("{auctionId}")]
+
+    public async Task<ActionResult<List<Bid>>> GetBidsForAuction(string auctionId) 
+    {
+        var bids = await DB.Find<Bid>()
+            .Match(a => a.AuctionId == auctionId)
+            .Sort(b => b.Descending(a => a.BidTime))
+            .ExecuteAsync();  
+
+        return bids;  
+    }
+
 }
