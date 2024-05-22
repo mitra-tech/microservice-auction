@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WW7graM9xU7z0HV7uD89kqwKdDb88e5fFZg81uZNLQrCKMUr6WnZMLHVua0FRh0fSJrLss5a5t7iW+L1pf7P0g==",
+  "dgSpecHash": "zOYywoKPQ43RXS4sY2lEOFa0LlH99htKPFE0yO3zyBF9nxlZRwirDi13z9ix1pNPmPyydwc+rflLchMyBDKQfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\BiddingService\\BiddingService.csproj",
   "expectedPackageFiles": [
