@@ -1,6 +1,6 @@
 'use client'
+
 import { useParamsStore } from '@/hooks/useParamsStore';
-import { stat } from 'fs';
 import { usePathname, useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
