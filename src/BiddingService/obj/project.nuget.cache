@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zOYywoKPQ43RXS4sY2lEOFa0LlH99htKPFE0yO3zyBF9nxlZRwirDi13z9ix1pNPmPyydwc+rflLchMyBDKQfA==",
+  "dgSpecHash": "JiB+iZgmEEYvcFQh7zEQsgfhUXY2Ogd03ClATFOQTn4TwsR2Wbg0V0EPnJan6ugOneqSYksOVcgIsHDXG7CwDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\BiddingService\\BiddingService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mitra\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
