@@ -5,10 +5,12 @@ EXPOSE 80
 # copy all .csproj files and restore as distinct layers. Use of the same COPY command
 # for every dockerfile in the project to take advantage of docker caching
 
+
 COPY Auction-Microservice-App.sln Auction-Microservice-App.sln
 COPY src/AuctionService/AuctionService.csproj src/AuctionService/AuctionService.csproj
 COPY src/SearchSrervice/SearchSrervice.csproj src/SearchSrervice/SearchSrervice.csproj
 COPY src/GatewayService/GatewayService.csproj src/GatewayService/GatewayService.csproj
+COPY src/BiddingService/BiddingService.csproj src/BiddingService/BiddingService.csproj 
 COPY src/Contracts/Contracts.csproj src/Contracts/Contracts.csproj
 COPY src/IdentityService/IdentityService.csproj src/IdentityService/IdentityService.csproj
 
