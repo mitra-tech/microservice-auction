@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj": {}
+    "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj": {
+    "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj",
+        "projectUniqueName": "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj",
         "projectName": "IdentityService",
-        "projectPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj",
+        "projectPath": "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\IdentityService.csproj",
         "packagesPath": "C:\\Users\\mitra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\obj\\",
+        "outputPath": "c:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\IdentityService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,6 +97,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.4, 8.0.4]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -106,6 +112,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JiB+iZgmEEYvcFQh7zEQsgfhUXY2Ogd03ClATFOQTn4TwsR2Wbg0V0EPnJan6ugOneqSYksOVcgIsHDXG7CwDw==",
+  "dgSpecHash": "G9HZ2e6YPhjj3QJb1a4TDOJ0zHWpuGhwA9uAaDINXR6elBS9EKm5Mlt+0sESlbj7yFv9Y925Nh6J4oyxInn89A==",
   "success": true,
   "projectFilePath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\BiddingService\\BiddingService.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,11 @@
     "C:\\Users\\mitra\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\google.protobuf\\3.27.0\\google.protobuf.3.27.0.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\grpc.core.api\\2.63.0\\grpc.core.api.2.63.0.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\grpc.net.client\\2.63.0\\grpc.net.client.2.63.0.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\grpc.net.common\\2.63.0\\grpc.net.common.2.63.0.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\grpc.tools\\2.64.0\\grpc.tools.2.64.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\masstransit\\8.2.2\\masstransit.8.2.2.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\masstransit.abstractions\\8.2.2\\masstransit.abstractions.8.2.2.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\masstransit.rabbitmq\\8.2.2\\masstransit.rabbitmq.8.2.2.nupkg.sha512",

@@ -52,3 +52,11 @@ C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\obj\Debu
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\obj\Debug\net8.0\BiddingService.pdb
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\obj\Debug\net8.0\BiddingService.genruntimeconfig.cache
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\obj\Debug\net8.0\ref\BiddingService.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\bin\Debug\net8.0\Contracts.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\BiddingService\bin\Debug\net8.0\Contracts.pdb
