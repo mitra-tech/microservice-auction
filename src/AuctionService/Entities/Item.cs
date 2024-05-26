@@ -12,7 +12,7 @@ public class Item {
     public int Mileage { get; set; }
     public string ImageUrl { get; set; }
 
-    // nav properties
+    // nav properties (1 to 1 relationship for db)
     public Auction Auction { get; set; }
     public Guid AuctionId { get; set; }
 }

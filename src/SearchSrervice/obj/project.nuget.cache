@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BavyrSwOZDMr5Si3VDVmYNG9fqKdkUu/NzyDzADs+R8LK2FlA7dhQymdriYvIAwGMnv+erqvodAbK/gHHm9IPQ==",
+  "dgSpecHash": "8NXgdfEfZkgmLDmBULI777WmNVSAY+MOn18ZmKtkxapDQ4FcTDKEHt+ooucgjJnC2zEG6Kn885EmhuNbK2QoJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\SearchSrervice\\SearchSrervice.csproj",
   "expectedPackageFiles": [
@@ -9,9 +9,9 @@
     "C:\\Users\\mitra\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
-    "C:\\Users\\mitra\\.nuget\\packages\\masstransit\\8.2.1\\masstransit.8.2.1.nupkg.sha512",
-    "C:\\Users\\mitra\\.nuget\\packages\\masstransit.abstractions\\8.2.1\\masstransit.abstractions.8.2.1.nupkg.sha512",
-    "C:\\Users\\mitra\\.nuget\\packages\\masstransit.rabbitmq\\8.2.1\\masstransit.rabbitmq.8.2.1.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\masstransit\\8.2.2\\masstransit.8.2.2.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\masstransit.abstractions\\8.2.2\\masstransit.abstractions.8.2.2.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\masstransit.rabbitmq\\8.2.2\\masstransit.rabbitmq.8.2.2.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
