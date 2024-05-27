@@ -24,7 +24,7 @@ RUN dotnet restore Auction-Microservice-App.sln
 # Copy the app folders over
 COPY src/NotificationService src/NotificationService
 COPY src/Contracts src/Contracts
-WORKDIR /app/src/AuctionService
+WORKDIR /app/src/NotificationService
 RUN dotnet publish -c Release -o /app/src/out
 
 
