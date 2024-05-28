@@ -31,12 +31,7 @@ import { FaSearch } from 'react-icons/fa';
             type='text' 
             placeholder='Search cars by make, model or color' 
             className='
-            flex-grow 
-            pl-5 
-            bg-transparent 
-            focus:outline-none 
-            border-transparent
-            focus:ring-0
+            input-custom
             text-sm 
             text-gray-500
             
