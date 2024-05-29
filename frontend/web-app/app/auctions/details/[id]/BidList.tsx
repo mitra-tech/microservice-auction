@@ -50,24 +50,34 @@ export default function BidList({user, auction}: Props) {
                     <Heading title={`Current high bid is $${numberWithCommas(highBid)}`}/>
                 </div>
             </div>
-          <div className='overflow-auto h-[400px] flex flex-col-reverse px-2'>
-            {bids.length === 0 ? (
-                <EmptyFilter 
-                    title="There are no bids for this item!"
-                    subtitle='Please make a bid'
-                />
-            ): (
-                <>
-                    {bids.map(bid => (
-                        <BidItem key={bid.id} bid={bid}/>
-                    ))}
-                </>
-            )}
-          </div>
+            <div className='overflow-auto h-[400px] flex flex-col-reverse px-2'>
+                {bids.length === 0 ? (
+                    <EmptyFilter 
+                        title="There are no bids for this item!"
+                        subtitle='Please make a bid'
+                    />
+                ): (
+                    <>
+                        {bids.map(bid => (
+                            <BidItem key={bid.id} bid={bid}/>
+                        ))}
+                    </>
+                )}
+            </div>
 
-          <div className='px-2 pb-2 text-gray-400'>
-                <BidForm auctionId={auction.id} highBid={highBid} />
-          </div>
+            <div className='px-2 pb-2 text-gray-400'>
+                {!user ? (
+                    <div className='flex items-center justify-center p-2 text-lg font-semibold'>
+                        You are not logged in! Please login and try again.
+                    </div>
+                ) : user && user.username === auction.seller ? (
+                    <div className='flex items-center justify-center p-2 text-lg font-semibold'>
+                        You cannot bid on your own auction!
+                    </div>
+                ) : (
+                    <BidForm auctionId={auction.id} highBid={highBid} />
+                )}           
+            </div>
          
         </div>
   )
