@@ -31,10 +31,10 @@ export default function SignalRProvider({children}: Props) {
             connection.start()
                 .then(() => {
                     connection.on("BidPlaced", (bid: Bid) => {
-                        console.log("bid placed event received!");
                         if (bid.bidStatus.includes("Accepted")) {
                             setCurrentPrice(bid.auctionId, bid.amount)
                         }
+                        addBid(bid);
                     })
                 }).catch(error => console.log(error));
         }
