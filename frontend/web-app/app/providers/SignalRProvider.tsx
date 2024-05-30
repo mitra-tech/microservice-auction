@@ -1,4 +1,4 @@
-'Use client'
+'use client'
 
 import { useAuctionStore } from '@/hooks/useAuctionStore';
 import { useBidStore } from '@/hooks/useBidStore';
