@@ -82,7 +82,9 @@ services:
     environment: 
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
+      - ClientApp=http://app.auction.local
       - ConnectionStrings__DefaultConnection=Server=postgres:5432;User Id=postgres;Password=postgrespw;Database=identity
+      - VIRTUAL_HOST=id.auction.local
     ports: 
       - 80:80
     depends_on:
@@ -98,8 +100,8 @@ services:
     environment: 
       - ASPNETCORE_ENVIRONMENT=Docker
       - ASPNETCORE_URLS=http://+:80
-    ports: 
-      - 6001:80
+      - ClientApp=http:/app.auction.local
+      - VIRTUAL_HOST=api.auction.local
     networks:
       custom:  
   bid-svc: 
@@ -143,16 +145,24 @@ services:
       dockerfile: frontend/web-app/Dockerfile
     volumes:
       - /var/lib/web/data
-    ports:
-      - 3000:3000
     extra_hosts: 
       - id.auction.local:10.5.0.200
     environment:
       - NEXTAUTH_SECRET=somethingreallyreallysecret
-      - NEXTAUTH_URL=http://localhost:3000
+      - NEXTAUTH_URL=http://app.auction.local
       - NEXTAUTH_URL_INTERNAL=http://web-app:3000
       - API_URL=http://gateway-svc/
       - ID_URL=http://id.auction.local
       - NEXT_PUBLIC_NOTIFY_URL=http://gateway-svc/notifications
+      - VIRTUAL_HOST=app.auction.local
+      - VIRTUAL_PORT=3000
     networks:
-      custom:                    
+      custom:     
+  nginx-proxy:
+    image: nginxproxy/nginx-proxy
+    ports:
+      - 80:80
+    networks:
+      custom:
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
