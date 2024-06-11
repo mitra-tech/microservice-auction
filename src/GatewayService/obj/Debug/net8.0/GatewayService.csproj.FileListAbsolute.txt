@@ -36,3 +36,4 @@ C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\GatewayService\obj\Debu
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\GatewayService\obj\Debug\net8.0\GatewayService.pdb
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\GatewayService\obj\Debug\net8.0\GatewayService.genruntimeconfig.cache
 C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\GatewayService\obj\Debug\net8.0\ref\GatewayService.dll
+C:\Users\mitra\OneDrive\Desktop\Microservice-Auction\src\GatewayService\bin\Debug\net8.0\appsettings.Docker.json
