@@ -5,7 +5,7 @@ using AuctionService.Entities;
 
 namespace AuctionService.RequestHelpers;
 
-partial class MappingProfiles : Profile 
+public class MappingProfiles : Profile 
 {
     public MappingProfiles()
     {

@@ -54,16 +54,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters.NameClaimType = "username";
     });
 
-
-builder.Services.AddGrpc();
+builder.Services.AddScoped<IAuctionRepository, AuctionRepository>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
-
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.MapControllers();
