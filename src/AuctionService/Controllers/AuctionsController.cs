@@ -18,6 +18,7 @@ public class AuctionsController : ControllerBase
     private readonly AuctionDbContext _context;
     private readonly IMapper _mapper;
     private readonly IPublishEndpoint _publishEndpoint;
+    
     public AuctionsController(AuctionDbContext context, IMapper mapper,
         IPublishEndpoint publishEndpoint)
     {
@@ -57,8 +58,6 @@ public class AuctionsController : ControllerBase
     {
         var auction = _mapper.Map<Auction>(auctionDto);
 
-        //TODO : add user as seller
-
         auction.Seller = User.Identity.Name;
 
         _context.Auctions.Add(auction);
@@ -72,7 +71,7 @@ public class AuctionsController : ControllerBase
 
         if (!result) return BadRequest("Could not save the changes to the DB!");
 
-        return CreatedAtAction(nameof(GetAuctionById), newAuction);
+        return CreatedAtAction(nameof(GetAuctionById), new { auction.Id },newAuction);
     }
 
 
