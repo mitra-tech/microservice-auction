@@ -7,6 +7,7 @@ using AuctionService.RequestHelpers;
 using AutoFixture;
 using AutoMapper;
 using MassTransit;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 
@@ -64,6 +65,20 @@ public class AuctionControllerTests
         // assert
         Assert.Equal(auction.Make, result.Value.Make);
         Assert.IsType<ActionResult<AuctionDto>>(result);
+
+    }
+
+     [Fact]
+    public async Task GetAuctionById_WithInvalidGuids_ReturnsNotFound() 
+    {
+        // arrange
+        _auctionRepo.Setup(repo => repo.GetAuctionByIdAsync(It.IsAny<Guid>())).ReturnsAsync(value: null);
+
+        // act
+        var result = await _controller.GetAuctionById(Guid.NewGuid());
+
+        // assert
+        Assert.IsType<NotFoundResult>(result.Result);
 
     }
 }
