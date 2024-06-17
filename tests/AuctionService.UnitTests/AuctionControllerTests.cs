@@ -106,4 +106,49 @@ public class AuctionControllerTests
         Assert.Equal("GetAuctionById", createdResult.ActionName);
         Assert.IsType<AuctionDto>(createdResult.Value);
     }
+
+    [Fact]
+    public async Task CreateAuction_FailedSave_Returns400BadRequest()
+    {
+        throw new NotImplementedException();
+    }
+
+    [Fact]
+    public async Task UpdateAuction_WithUpdateAuctionDto_ReturnsOkResponse()
+    {
+        // arrange 
+        var auction = _fixture.Build<Auction>().Without(x => x.Item).Create();
+        auction.Item = _fixture.Build<Item>().Without(x => x.Auction).Create();
+
+    }
+
+    [Fact]
+    public async Task UpdateAuction_WithInvalidUser_Returns403Forbid()
+    {
+        throw new NotImplementedException();
+    }
+
+    [Fact]
+    public async Task UpdateAuction_WithInvalidGuid_ReturnsNotFound()
+    {
+        throw new NotImplementedException();
+    }
+
+    [Fact]
+    public async Task DeleteAuction_WithValidUser_ReturnsOkResponse()
+    {
+        throw new NotImplementedException();
+    }
+
+    [Fact]
+    public async Task DeleteAuction_WithInvalidGuid_Returns404Response()
+    {
+        throw new NotImplementedException();
+    }
+
+    [Fact]
+    public async Task DeleteAuction_WithInvalidUser_Returns403Response()
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -85,6 +85,7 @@ public class AuctionsController : ControllerBase
 
         
         var result = await _repo.SaveChangesAsync();
+        
         if (result) return Ok();
 
         return BadRequest("Changes were not saved!");   
