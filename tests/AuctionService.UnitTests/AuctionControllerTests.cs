@@ -184,7 +184,39 @@ public class AuctionControllerTests
 
         // act
         var result = await _controller.DeleteAuction(auction.Id);
+
+        // assert
         Assert.IsType<OkResult>(result);
 
+    }
+    
+    [Fact]
+    public async Task DeleteAuction_WithInvalidGuid_Returns404Response()
+    {
+        // arrange 
+        var auction = _fixture.Build<Auction>().Without(x => x.Item).Create();
+        _auctionRepo.Setup(repo => repo.GetAuctionEntityById(It.IsAny<Guid>())).ReturnsAsync(value: null);
+    
+
+        // act
+        var result = await _controller.DeleteAuction(auction.Id);
+
+        // assert
+        Assert.IsType<NotFoundResult>(result);  
+    }
+
+    [Fact]
+    public async Task DeleteAuction_WithInvalidUser_Returns403Response()
+    {
+        // arrange 
+        var auction = _fixture.Build<Auction>().Without(x => x.Item).Create();
+        _auctionRepo.Setup(repo => repo.GetAuctionEntityById(It.IsAny<Guid>())).ReturnsAsync(auction);
+    
+
+        // act
+        var result = await _controller.DeleteAuction(auction.Id);
+
+        // assert
+        Assert.IsType<ForbidResult>(result);  
     }
 }
