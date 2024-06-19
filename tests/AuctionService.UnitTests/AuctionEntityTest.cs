@@ -28,13 +28,13 @@ public class AuctionEntityTests
         var auction = new Auction
         {
             Id = Guid.NewGuid(),
-            ReservePrice = 10            
+            ReservePrice = 0            
         };
 
         // act
         var result = auction.HasReservePrice();
 
         // assert 
-        Assert.True(result);
+        Assert.False(result);
     }
 }
