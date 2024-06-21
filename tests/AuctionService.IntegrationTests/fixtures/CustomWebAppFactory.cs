@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.TestHost;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Testcontainers.PostgreSql;
+using WebMotions.Fake.Authentication.JwtBearer;
 
 namespace AuctionService.IntegrationTests;
 
@@ -31,6 +32,13 @@ public class CustomWebAppFactory : WebApplicationFactory<Program>, IAsyncLifetim
             services.AddMassTransitTestHarness();
 
             services.EnsureCreated<AuctionDbContext>();
+            
+            //Creates a fake authentication service
+            services.AddAuthentication(FakeJwtBearerDefaults.AuthenticationScheme)
+                .AddFakeJwtBearer(options => 
+                {
+                    options.BearerValueType = FakeJwtBearerBearerValueType.Jwt;
+                });
         });
     }
 
