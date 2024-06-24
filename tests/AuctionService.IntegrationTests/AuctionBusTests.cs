@@ -16,7 +16,7 @@ public class AuctionBusTests :  IAsyncLifetime
     
     private readonly CustomWebAppFactory _factory;
     private readonly HttpClient _httpClient;
-    private ITestHarness _testHarness;
+    private readonly ITestHarness _testHarness;
 
     public AuctionBusTests(CustomWebAppFactory factory)
     {
