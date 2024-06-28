@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8NXgdfEfZkgmLDmBULI777WmNVSAY+MOn18ZmKtkxapDQ4FcTDKEHt+ooucgjJnC2zEG6Kn885EmhuNbK2QoJg==",
+  "dgSpecHash": "8Gq8wfplxbWMbeLr495qIQcbKESt0BP9oD/zCRDAB7OS0JMHgqtNTF2FXRThPxkPSWVHRT+ipSFYVujsQvGSuQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mitra\\OneDrive\\Desktop\\Microservice-Auction\\src\\SearchSrervice\\SearchSrervice.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,7 @@
     "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.0\\microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.http\\8.0.0\\microsoft.extensions.http.8.0.0.nupkg.sha512",
-    "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.http.polly\\8.0.4\\microsoft.extensions.http.polly.8.0.4.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.http.polly\\8.0.6\\microsoft.extensions.http.polly.8.0.6.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
@@ -38,6 +38,7 @@
     "C:\\Users\\mitra\\.nuget\\packages\\mongodb.driver.core\\2.24.0\\mongodb.driver.core.2.24.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\mongodb.entities\\23.1.0\\mongodb.entities.23.1.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.2\\mongodb.libmongocrypt.1.8.2.nupkg.sha512",
+    "C:\\Users\\mitra\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\polly\\7.2.4\\polly.7.2.4.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\mitra\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
